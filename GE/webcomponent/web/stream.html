@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>GE HEALTH CARE</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+    <script src="openvidu-webcomponent-2.16.0.js"></script>
+    <link rel="stylesheet" href="openvidu-webcomponent-2.16.0.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Form to connect to a video-session -->
+    
+    <div id="main" style="text-align: center;">
+        
+        <form onsubmit="joinSession(); return false" class="box2">
+            <h1>Session Details</h1>
+           
+            <p>
+                
+                <input type="text" placeholder="Room Name" id="sessionName" value="Session" required>
+            </p>
+            <p>
+                
+                <input type="text" placeholder="User Name" id="user" value="User">
+            </p>
+            <p>
+                <input type="submit" value="JOIN">
+            </p>
+        </form>
+    </div>
+
+    <!-- OpenVidu Web Component -->
+    <openvidu-webcomponent style="display: none"></openvidu-webcomponent>
+
+</body>
+
+</html>
